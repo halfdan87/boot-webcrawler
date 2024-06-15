@@ -28,4 +28,20 @@ function getUrlsFromHtml(htmlBody, baseUrl) {
 
 }
 
+function main() {
+    const actArgs = process.argv.splice(2);
+    if (actArgs.length < 1) {
+        console.error("Pass a base url");
+        return;
+    }
+    if (actArgs.length > 1) {
+        console.error("Pass only ONE url you moron... Jesus Christ...");
+        return;
+    }
+    console.log(`Starting the crawl: ${actArgs[0]}`);
+    
+}
+
+main();
+
 export { normalizeUrl, getUrlsFromHtml };
