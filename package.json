@@ -1,0 +1,19 @@
+{
+  "name": "boot-webcrawler",
+  "version": "1.0.0",
+  "description": "Boot.dev web crawler tutorial project.",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "Piotr Kaczmarski",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "jsdom": "^24.1.0"
+  }
+}
